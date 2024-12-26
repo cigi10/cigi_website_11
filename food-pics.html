@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="gallery.css"> 
+    <link rel="stylesheet" href="global.css"> 
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="commonjs1.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+</head>
+<body>
+
+  <div class="row">
+    <div id="header-image">
+        <img src="assets/indexpage_header_image.jpeg" alt="Header Image" />
+    </div>
+  </div>
+
+  <div class="logo-header">
+      <img src="assets/logo.svg" class="logo-header-icon" alt="Logo Icon">
+  </div>
+
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#x263C;
+
+      </a>
+      <a href="index.html" class="active"><b>home</b></a>
+      <a href="food-pics.html"><b>food-pics</b></a>
+      <a href="contact.html"><b>contact</b></a>
+      <a href ="illustrations.html"><b>illustrations</b></a>
+      <a href ="wallpapers.html"><b>wallpapers</b></a>
+    </div>
+  </nav>
+
+  <div class="row">
+  <div class="gallery">
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/beverages_truffles.jpg')">
+      <img src="assets/images/food_images/beverages_truffles.jpg" alt="Image 1">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/burger_king_meal.jpg')">
+        <img src="assets/images/food_images/burger_king_meal.jpg" alt="Image 2">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/cheese_fondue_basket_thyme_and_whisk.jpg')">
+        <img src="assets/images/food_images/cheese_fondue_basket_thyme_and_whisk.jpg" alt="Image 3">
+    </div>
+    
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/chicken_lasagna_truffles.jpg')">
+      <img src="assets/images/food_images/chicken_lasagna_truffles.jpg" alt="Image 4">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/chicken_nuggets_ikea.jpg')">
+      <img src="assets/images/food_images/chicken_nuggets_ikea.jpg" alt="Image 5">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/chicken_popcorn_roxie.jpg')">
+      <img src="assets/images/food_images/chicken_popcorn_roxie.jpg" alt="Image 6">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/dahi_chaat_shubh.jpg')">
+      <img src="assets/images/food_images/dahi_chaat_shubh.jpg" alt="Image 7">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/dessert_chocolate_truffles.jpg')">
+      <img src="assets/images/food_images/dessert_chocolate_truffles.jpg" alt="Image 8">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/dessert_roxie.jpg')">
+      <img src="assets/images/food_images/dessert_roxie.jpg" alt="Image 9">
+    </div>
+    
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/dynamite_roll_suku.jpg')">
+      <img src="assets/images/food_images/dynamite_roll_suku.jpg" alt="Image 10">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/fish_burger_truffles.jpg')">
+      <img src="assets/images/food_images/fish_burger_truffles.jpg" alt="Image 11">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/garlic_naan_sagarika_premier.jpg')">
+      <img src="assets/images/food_images/garlic_naan_sagarika_premier.jpg" alt="Image 12">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/gelato_milano.jpg')">
+      <img src="assets/images/food_images/gelato_milano.jpg" alt="Image 13">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/honey_cake_warrior_bakery.jpg')">
+      <img src="assets/images/food_images/honey_cake_warrior_bakery.jpg" alt="Image 14">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/idli_kamat.jpg')">
+      <img src="assets/images/food_images/idli_kamat.jpg" alt="Image 15">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/ikea_meal1.jpg')">
+      <img src="assets/images/food_images/ikea_meal1.jpg" alt="Image 16">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/ikea_meal2.jpg')">
+      <img src="assets/images/food_images/ikea_meal2.jpg" alt="Image 17">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/kapoor_cafe_meal.jpg')">
+      <img src="assets/images/food_images/kapoor_cafe_meal.jpg" alt="Image 18">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/kfc_popcorn_fries.jpg')">
+      <img src="assets/images/food_images/kfc_popcorn_fries.jpg" alt="Image 19">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/korean_garlic_bread_roxie.jpg')">
+      <img src="assets/images/food_images/korean_garlic_bread_roxie.jpg" alt="Image 20">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/kapoor_cafe_meal.jpg')">
+      <img src="assets/images/food_images/mc_donalds_meal.jpg" alt="Image 21">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/meal_goa.jpg')">
+      <img src="assets/images/food_images/meal_goa.jpg" alt="Image 22">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/naan_masala_mandi.jpg')">
+      <img src="assets/images/food_images/naan_masala_mandi.jpg" alt="Image 23">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/pizza_truffles.jpg')">
+      <img src="assets/images/food_images/pizza_truffles.jpg" alt="Image 24">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/prawns_garlic_curry_goa.jpg')">
+      <img src="assets/images/food_images/prawns_garlic_curry_goa.jpg" alt="Image 25">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/red_velvet_cake_truffles.jpg')">
+      <img src="assets/images/food_images/red_velvet_cake_truffles.jpg" alt="Image 26">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/sagarika_premier_curry_starter_naan.jpg')">
+      <img src="assets/images/food_images/sagarika_premier_curry_starter_naan.jpg" alt="Image 27">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/sizzler_thyme_and_whisk.jpg')">
+      <img src="assets/images/food_images/sizzler_thyme_and_whisk.jpg" alt="Image 28">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/star_pizza_roxie.jpg')">
+      <img src="assets/images/food_images/star_pizza_roxie.jpg" alt="Image 29">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/suku_ramen1.jpg')">
+      <img src="assets/images/food_images/suku_ramen1.jpg" alt="Image 30">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/suku_ramen2.jpg')">
+      <img src="assets/images/food_images/suku_ramen2.jpg" alt="Image 31">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/sushi_suku_.jpg')">
+      <img src="assets/images/food_images/sushi_suku_.jpg" alt="Image 32">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/wings_truffles.jpg')">
+      <img src="assets/images/food_images/wings_truffles.jpg" alt="Image 33">
+    </div>
+
+  </div>
+  </div>
+
+  <div class="row">
+<div class="modal" id="commonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">✖</span>
+        <div class="modal-body">
+          <img id="modalImage" src="" alt="Modal Image">
+          <button class="download-btn" onclick="downloadImage()">&#x2913;</button>
+        </div>      
+      </div>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    document.getElementById('commonModal').style.display = 'none';
+  });
+
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  $('#graphics, #dropdown-content').click(function() {
+	  $('#dropdown-content').toggleClass('show');
+  })
+
+</script>
+
+<footer>
+    <div class="rounded-social-buttons">
+        <a class="social-button pinterest" href="https://in.pinterest.com/CiGi10/" target="_blank"><i class="fab fa-pinterest"></i></a>
+        <a class="social-button instagram" href="https://www.instagram.com/cigis_corner/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="social-button instagram" href="https://www.instagram.com/cigi.eats/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="social-button linkedin" href="https://www.linkedin.com/in/prachi-gore-604416294" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a class="social-button youtube" href="https://youtube.com/@poistah?si=hJWnNMEkSg8xhiKW" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a class="social-button email" href="mailto:chiprarego@gmail.com?subject=Contact&body=Hello!%20I%20would%20like%20to%20get%20in%20touch." target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    <span class="watermark">&#x1D9C;&#x2071;&#x1D4D;&#x2071;</span>
+</footer>
+
+
+
+</body>
+<html>

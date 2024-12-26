@@ -1,0 +1,289 @@
+how to open the apache2 :
+sudo systemctl start apache2
+sudo systemctl restart apache2
+
+Website bg hex code = #191919
+sage green colour = #A3B18A
+pink complimentry colour = #EA9185
+cream colour = #FFFBEF
+font = helvetica
+font 2 = https://www.jetbrains.com/lp/mono/#how-to-install
+
+https://rsms.me/inter/#glyphs/triagdn - opening and closing menu and symbols
+https://chooser-beta.creativecommons.org/ - licnse 
+
+
+
+    <h2>Contact Us</h2>
+    <div class="form-container">
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" class="form-input" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="text" name="email" class="form-input" /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message" class="form-textarea"></textarea></label>
+        </p>
+        <p>
+          <button type="submit" class="btn-submit">Send</button>
+        </p>
+      </form>
+    </div>
+
+
+              3 images
+
+         <div class="col card">
+                        <img src="assets/images/food_images/dynamite_roll_suku.jpg" alt="dynamite_roll_suku" id="image_24" onclick="showDownloadPopup(this);" />
+                        <h5 class="card-title"><a href="image-download.html"></a></h5>
+                    </div>
+
+
+
+              4 images
+
+
+
+        <div class="row">
+            <div id="pistaHeader">
+                <img src="assets/images/indexpage_header_image.jpeg" alt="Header Image" />
+            </div>
+        </div>
+
+        <div class="pin-container">
+            <img src="assets/logo.svg" class="pin-icon" alt="Logo Icon">
+        </div>
+
+    <footer>
+        <div class="rounded-social-buttons">
+            <a class="social-button pinterest" href="https://in.pinterest.com/CiGi10/" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/cigis_corner/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/cigi.eats/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/in/prachi-gore-604416294" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="social-button youtube" href="https://youtube.com/@poistah?si=hJWnNMEkSg8xhiKW" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a class="social-button email" href="mailto:chiprarego@gmail.com?subject=Contact&body=Hello!%20I%20would%20like%20to%20get%20in%20touch." target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+
+
+    home:
+&#x2095;&#x2092;&#x2098;&#x2091;
+
+contact:
+&#x2093;&#x2092;&#x2099;&#x209A;&#x2090;&#x2093;&#x209A;
+
+food pics:
+&#x2091;&#x2092;&#x2092;&#x2096;&#x209A;&#x209D;&#x2093;&#x209B;
+
+graphics:
+&#x209B;&#x209C;&#x2090;&#x209A;&#x2095;&#x209D;&#x2093;&#x209B;
+
+illustrations:
+&#x209D;&#x2094;&#x2094;&#x209A;&#x209B;&#x209A;&#x209C;&#x2090;&#x209A;&#x209D;&#x2092;&#x2099;&#x209B;
+
+wallpapers:
+&#x1D60;&#x2090;&#x2094;&#x2094;&#x209A;&#x2090;&#x209A;&#x2091;&#x209C;&#x209B;
+
+
+
+
+
+
+
+//GALLERY 
+  <div class="gallery">
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/beverages_truffles.jpg')">
+        <img src="assets/images/food_images/beverages_truffles.jpg" alt="Image 1">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/burger_king_meal.jpg')">
+        <img src="assets/images/food_images/burger_king_meal.jpg" alt="Image 2">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/cheese_fondue_basket_thyme_and_whisk.jpg')">
+        <img src="assets/images/food_images/cheese_fondue_basket_thyme_and_whisk.jpg" alt="Image 3">
+    </div>
+    
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/chicken_lasagna_truffles.jpg')">
+      <img src="assets/images/food_images/chicken_lasagna_truffles.jpg" alt="Image 4">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/chicken_nuggets_ikea.jpg')">
+      <img src="assets/images/food_images/chicken_nuggets_ikea.jpg" alt="Image 5">
+    </div>
+  
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/chicken_popcorn_roxie.jpg')">
+      <img src="assets/images/food_images/chicken_popcorn_roxie.jpg" alt="Image 6">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/dahi_chaat_shubh.jpg')">
+      <img src="assets/images/food_images/dahi_chaat_shubh.jpg" alt="Image 7">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/dessert_chocolate_truffles.jpg')">
+      <img src="assets/images/food_images/dessert_chocolate_truffles.jpg" alt="Image 8">
+    </div>
+  
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/dessert_roxie.jpg')">
+      <img src="assets/images/food_images/dessert_roxie.jpg" alt="Image 9">
+    </div>
+    
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/dynamite_roll_suku.jpg')">
+      <img src="assets/images/food_images/dynamite_roll_suku.jpg" alt="Image 10">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/fish_burger_truffles.jpg')">
+      <img src="assets/images/food_images/fish_burger_truffles.jpg" alt="Image 11">
+    </div>
+  
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/garlic_naan_sagarika_premier.jpg')">
+      <img src="assets/images/food_images/garlic_naan_sagarika_premier.jpg" alt="Image 12">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/gelato_milano.jpg')">
+      <img src="assets/images/food_images/gelato_milano.jpg" alt="Image 13">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/honey_cake_warrior_bakery.jpg')">
+      <img src="assets/images/food_images/honey_cake_warrior_bakery.jpg" alt="Image 14">
+    </div>
+  
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/idli_kamat.jpg')">
+      <img src="assets/images/food_images/idli_kamat.jpg" alt="Image 15">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/ikea_meal1.jpg')">
+      <img src="assets/images/food_images/ikea_meal1.jpg" alt="Image 16">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/ikea_meal2.jpg')">
+      <img src="assets/images/food_images/ikea_meal2.jpg" alt="Image 17">
+    </div>
+  
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/kapoor_cafe_meal.jpg')">
+      <img src="assets/images/food_images/kapoor_cafe_meal.jpg" alt="Image 18">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/kfc_popcorn_fries.jpg')">
+      <img src="assets/images/food_images/kfc_popcorn_fries.jpg" alt="Image 19">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/korean_garlic_bread_roxie.jpg')">
+      <img src="assets/images/food_images/korean_garlic_bread_roxie.jpg" alt="Image 20">
+    </div>
+  
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/kapoor_cafe_meal.jpg')">
+      <img src="assets/images/food_images/mc_donalds_meal.jpg" alt="Image 21">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/meal_goa.jpg')">
+      <img src="assets/images/food_images/meal_goa.jpg" alt="Image 22">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/naan_masala_mandi.jpg')">
+      <img src="assets/images/food_images/naan_masala_mandi.jpg" alt="Image 23">
+    </div>
+  
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/pizza_truffles.jpg')">
+      <img src="assets/images/food_images/pizza_truffles.jpg" alt="Image 24">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/prawns_garlic_curry_goa.jpg')">
+      <img src="assets/images/food_images/prawns_garlic_curry_goa.jpg" alt="Image 25">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/red_velvet_cake_truffles.jpg')">
+      <img src="assets/images/food_images/red_velvet_cake_truffles.jpg" alt="Image 26">
+    </div>
+  
+    <div class="gallery-item" onclick="openModal('assets/images/sagarika_premier_curry_starter_naan.jpg')">
+      <img src="assets/images/food_images/sagarika_premier_curry_starter_naan.jpg" alt="Image 27">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/sizzler_thyme_and_whisk.jpg')">
+      <img src="assets/images/food_images/sizzler_thyme_and_whisk.jpg" alt="Image 28">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/star_pizza_roxie.jpg')">
+      <img src="assets/images/food_images/star_pizza_roxie.jpg" alt="Image 29">
+    </div>
+  
+    <div class="gallery-item" onclick="openModal('assets/images/suku_ramen1.jpg')">
+      <img src="assets/images/food_images/suku_ramen1.jpg" alt="Image 30">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/suku_ramen2.jpg')">
+      <img src="assets/images/food_images/suku_ramen2.jpg" alt="Image 31">
+    </div>
+
+    <div class="gallery-item" onclick="openModal('assets/images/food_images/sushi_suku_.jpg')">
+      <img src="assets/images/food_images/sushi_suku_.jpg" alt="Image 32">
+    </div>
+  
+    <div class="gallery-item" onclick="openModal('assets/images/wings_truffles.jpg')">
+      <img src="assets/images/food_images/wings_truffles.jpg" alt="Image 33">
+    </div>
+
+  </div>
+
+
+  i have a problem here
+my header, logo and gallery images - i cannot scroll to them
+theyve been cropped 
+if i give you the code, can you tell me the problem? i have one food pic page, one global.css and one gallery.css
+i wanted to keep 1:1 aspect ratio but it couldnt even fix that so pls help me 
+
+
+
+ <nav>
+    <div class="topnav" id="myTopnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
+      <a href="index.html" class="active"><b>home</b></a>
+      <a href="#" id="graphics"><b>graphics &#x2186;</b></a>
+      
+      <div id="dropdown-content" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+       
+      <a href="food-pics.html"><b>food-pics</b></a>
+      <a href="contact.html"><b>contact</b></a>
+      
+    </div>
+  </nav>
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightseagreen;
+    min-height: 400px;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .dropdown-content a {
+    float:both;
+    color: black;
+    font-weight: 200;
+    padding: 0px 0px;
+    text-decoration: none;
+    min-block-size: 5px;
+  }
+  
+  
+  .show {
+    display: block;
+  }
+
+  nav with drop down trial

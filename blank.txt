@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+    <link rel="stylesheet" href="global.css"> 
+    <script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+</head>
+<body>
+<div class="row">
+    <div id="header-image">
+        <img src="assets/indexpage_header_image.jpeg" alt="Header Image" />
+    </div>
+</div>
+
+<div class="logo-header">
+    <img src="assets/logo.svg" class="logo-header-icon" alt="Logo Icon">
+</div>
+
+
+<footer>
+    <div class="rounded-social-buttons">
+        <a class="social-button pinterest" href="https://in.pinterest.com/CiGi10/" target="_blank"><i class="fab fa-pinterest"></i></a>
+        <a class="social-button instagram" href="https://www.instagram.com/cigis_corner/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="social-button instagram" href="https://www.instagram.com/cigi.eats/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="social-button linkedin" href="https://www.linkedin.com/in/prachi-gore-604416294" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a class="social-button youtube" href="https://youtube.com/@poistah?si=hJWnNMEkSg8xhiKW" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a class="social-button email" href="mailto:chiprarego@gmail.com?subject=Contact&body=Hello!%20I%20would%20like%20to%20get%20in%20touch." target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    <span class="watermark">&#x1D9C;&#x2071;&#x1D4D;&#x2071;</span>
+</footer>
+
+</body>
+<html>
