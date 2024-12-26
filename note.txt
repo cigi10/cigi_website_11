@@ -287,3 +287,24 @@ i wanted to keep 1:1 aspect ratio but it couldnt even fix that so pls help me
   }
 
   nav with drop down trial
+
+
+  <div class="form-wrapper">
+  <div class="form-container">
+    <form name="contact" method="POST" data-netlify="true">
+      <h5> contact us </h5>
+      <p>
+        <label>name: <input type="text" name="name" class="form-input" /></label>
+      </p>
+      <p>
+        <label>email: <input type="text" name="email" class="form-input" /></label>
+      </p>
+      <p>
+        <label>message: <br> <textarea name="message" class="form-textarea"></textarea></label>
+      </p>
+      <p>
+        <button type="submit" class="btn-submit">send</button>
+      </p>
+    </form>
+  </div>
+</div>
