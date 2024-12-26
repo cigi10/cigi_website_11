@@ -99,13 +99,13 @@ body {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   transition: background-color 0.2s ease;
 }
 
 .download-btn:hover {
-  background-color: #f5f1e5;
+  background-color: #89A078;
 }
 
 @media (max-width: 768px) {
@@ -122,4 +122,30 @@ body {
   #modalImage {
     max-width: 300px;
   }
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;  /* Space out the buttons */
+  gap: 10px;  /* Add space between buttons */
+  margin-top: 10px;
+}
+
+.pinterest-btn {
+  display: flex;
+  align-items: center;
+  color: #FFFBEF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 36px; 
+}
+
+.pinterest-btn i {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.pinterest-btn:hover {
+  color: #89A078;  /* Darker Pinterest red on hover */
 }

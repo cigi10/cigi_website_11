@@ -1,3 +1,4 @@
+// Function to toggle the mobile menu
 function toggleMenu() {
   const navLinks = document.querySelector('.nav-links');
   const hamburger = document.querySelector('.hamburger');
@@ -8,8 +9,15 @@ function toggleMenu() {
 
 // Function to open the modal and load the image
 function openModal(imageSrc) {
+  // Set the image source in the modal
   document.getElementById('modalImage').src = imageSrc;
-  document.getElementById('commonModal').style.display = 'flex';  // Use flex to center content
+
+  // Dynamically set the Pinterest button URL
+  const pinterestButton = document.getElementById('pinterestButton');
+  pinterestButton.href = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(window.location.href)}&media=${encodeURIComponent(imageSrc)}&description=${encodeURIComponent('Description of the image')}`;
+
+  // Show the modal with flex to center content
+  document.getElementById('commonModal').style.display = 'flex';
 }
 
 // Function to close the modal
@@ -26,3 +34,10 @@ function downloadImage() {
   link.click();
 }
 
+// Example of opening the modal (you can hook this up to your gallery items)
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', function () {
+    const imageSrc = this.querySelector('img').src;
+    openModal(imageSrc);
+  });
+});

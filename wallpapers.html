@@ -20,6 +20,10 @@
 </head>
 <body>
 
+  <script>NekoType="white"</script>
+  <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
+  href="https://webneko.net">Neko</a></h1>
+
   <div class="row">
     <div id="header-image">
         <img src="assets/indexpage_header_image.jpeg" alt="Header Image" />
@@ -82,18 +86,23 @@
   </div>
 
   <div class="row">
-<div class="modal" id="commonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-        <span class="close-btn" onclick="closeModal()">✖</span>
-        <div class="modal-body">
-          <img id="modalImage" src="" alt="Modal Image">
-          <button class="download-btn" onclick="downloadImage()">&#x2913;</button>
-        </div>      
+    <div class="modal" id="commonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">✖</span>
+          <div class="modal-body">
+            <img id="modalImage" src="" alt="Modal Image">
+            <div class="modal-buttons">
+              <button class="download-btn" onclick="downloadImage()">&#x2913;</button>
+              <a href="" id="pinterestButton" class="pinterest-btn" data-pin-do="buttonBookmark" data-pin-hover="true" data-pin-round="true">
+                <i class="fab fa-pinterest"></i>
+              </a>
+            </div>
+          </div>      
+        </div>
       </div>
+    </div>
   </div>
-</div>
-</div>
 
 <script type="text/javascript">
   $(document).ready(function () {
