@@ -9,6 +9,27 @@ body {
     overflow: auto;
 }
 
+h1, p {
+  text-align: center; 
+  margin: 0 auto; 
+  width: 90%; 
+  max-width: 800px; 
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 20px;
+  line-height: 1.6; 
+}
+
+.highlight {
+  color: #A3B18A; /* Sage green */
+  font-weight: bold; /* Optional: Makes the green text stand out more */
+}
+
 .logo-header {
     text-align: left;
     margin-top: -30px; 
@@ -112,7 +133,7 @@ footer {
   .topnav a.icon {
     display: none;
     font-size: 32px; /* Increased from 24px */
-    color: #f2f2f2;
+    color: #FFFBEF;
     text-decoration: none;
     line-height: 1; /* Ensure proper vertical alignment */
   }
@@ -172,7 +193,7 @@ footer {
     .form-container h5 {
       margin: 0 0 20px 0;
       font-size: 24px;
-      color: #A3B18A;
+      color: #FFFBEF;
     }
 
     .form-container p {
@@ -198,7 +219,7 @@ footer {
 
     .btn-submit {
       background-color: #A3B18A;
-      color: #191919;
+      color: #FFFBEF;
       font-size: 16px;
       padding: 10px 15px;
       border: none;
