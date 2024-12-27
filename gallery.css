@@ -93,15 +93,19 @@ body {
 }
 
 .download-btn {
-  padding: 15px 15px;
+  padding: 15px;
   background-color: #FFFBEF;
   color: #191919;
   border: none;
-  border-radius: 6px;
+  border-radius: 50%; 
   cursor: pointer;
   font-size: 15px;
-  font-weight: 500;
   transition: background-color 0.2s ease;
+  width: 50px;  
+  height: 50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .download-btn:hover {
@@ -159,8 +163,8 @@ body {
 .gallery-item::after {
   content: '';
   position: absolute;
-  bottom: 8px; /* Fixed padding from bottom */
-  right: 8px; /* Fixed padding from right */
+  bottom: 8px; 
+  right: 8px; 
   /* No transform needed since we're using direct positioning */
   width: 60px; /* Fixed width for consistency */
   height: 60px; /* Fixed height for consistency */

@@ -23,11 +23,12 @@ h1 {
 p {
   margin-top: 20px;
   line-height: 1.6; 
+  word-break: break-word;
 }
 
 .highlight {
-  color: #A3B18A; /* Sage green */
-  font-weight: bold; /* Optional: Makes the green text stand out more */
+  color: #A3B18A; 
+  font-weight: bold; 
 }
 
 .logo-header {
@@ -132,10 +133,10 @@ footer {
   
   .topnav a.icon {
     display: none;
-    font-size: 32px; /* Increased from 24px */
+    font-size: 32px; 
     color: #FFFBEF;
     text-decoration: none;
-    line-height: 1; /* Ensure proper vertical alignment */
+    line-height: 1; 
   }
 
   .navItem {
@@ -179,15 +180,15 @@ footer {
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
       text-align: center;
       width: 100%;
-      max-width: 400px; /* Ensure a responsive layout */
-      padding: 20px; /* Adds consistent padding inside the form */
+      max-width: 400px; 
+      padding: 20px; 
     }
 
     .form-wrapper {
-      display: flex; /* Enables flexbox for alignment */
-      justify-content: center; /* Centers the form horizontally */
-      align-items: center; /* Centers the form vertically */
-      min-height: 100vh; /* Ensures the wrapper takes up the full viewport height */
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      min-height: 100vh; 
   }
 
     .form-container h5 {
