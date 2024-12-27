@@ -93,13 +93,13 @@ body {
 }
 
 .download-btn {
-  padding: 12px 24px;
+  padding: 15px 15px;
   background-color: #FFFBEF;
   color: #191919;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   transition: background-color 0.2s ease;
 }
@@ -131,35 +131,39 @@ body {
   margin-top: 10px;
 }
 
-.pinterest-btn {
-  display: flex;
-  align-items: center;
-  color: #FFFBEF;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 36px; 
-}
+  .pinterest-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFBEF; 
+    color: #191919;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+  }
 
-.pinterest-btn i {
-  margin-right: 8px;
-  font-size: 24px;
-}
+  .pinterest-button i {
+    margin-right: 6px; /* Spacing between the icon and text */
+    font-size: 20px;
+  }
 
-.pinterest-btn:hover {
-  color: #89A078;  /* Darker Pinterest red on hover */
-}
+  .pinterest-button:hover {
+    background-color: #89A078; 
+  }
+
 
 /* Watermark styles for gallery items */
 .gallery-item::after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  /* Use percentage-based sizing */
-  width: 50%; /* This will be 50% of the container width */
-  height: 50%; /* This will be 50% of the container height */
+  bottom: 8px; /* Fixed padding from bottom */
+  right: 8px; /* Fixed padding from right */
+  /* No transform needed since we're using direct positioning */
+  width: 60px; /* Fixed width for consistency */
+  height: 60px; /* Fixed height for consistency */
   background-image: url('assets/logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -177,8 +181,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
   /* Use percentage-based sizing */
-  width: 40%; /* Slightly smaller for modal to ensure it fits */
-  height: 40%;
+  width: 30%; /* Slightly smaller for modal to ensure it fits */
+  height: 30%;
   background-image: url('assets/logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -186,4 +190,12 @@ body {
   opacity: 0.4;
   pointer-events: none;
   z-index: 2;
+}
+
+.watermark-notice {
+  text-align: center;
+  color: #666;
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+  font-style: italic;
 }

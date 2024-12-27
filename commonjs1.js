@@ -11,10 +11,6 @@ function toggleMenu() {
 function openModal(imageSrc) {
   // Set the image source in the modal
   document.getElementById('modalImage').src = imageSrc;
-
-  // Dynamically set the Pinterest button URL
-  
-
   
   // Show the modal with flex to center content
   document.getElementById('commonModal').style.display = 'flex';
