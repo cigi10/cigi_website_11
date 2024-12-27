@@ -149,3 +149,41 @@ body {
 .pinterest-btn:hover {
   color: #89A078;  /* Darker Pinterest red on hover */
 }
+
+/* Watermark styles for gallery items */
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  /* Use percentage-based sizing */
+  width: 50%; /* This will be 50% of the container width */
+  height: 50%; /* This will be 50% of the container height */
+  background-image: url('assets/logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Watermark styles for modal image */
+.modal-content::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  /* Use percentage-based sizing */
+  width: 40%; /* Slightly smaller for modal to ensure it fits */
+  height: 40%;
+  background-image: url('assets/logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 2;
+}

@@ -13,9 +13,9 @@ function openModal(imageSrc) {
   document.getElementById('modalImage').src = imageSrc;
 
   // Dynamically set the Pinterest button URL
-  const pinterestButton = document.getElementById('pinterestButton');
-  pinterestButton.href = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(window.location.href)}&media=${encodeURIComponent(imageSrc)}&description=${encodeURIComponent('Description of the image')}`;
+  
 
+  
   // Show the modal with flex to center content
   document.getElementById('commonModal').style.display = 'flex';
 }
