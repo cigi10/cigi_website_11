@@ -50,31 +50,39 @@ body {
 .modal {
   display: none;
   position: fixed;
+  text-align:center;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
+  display: inline-block;
+  width: auto;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  
 }
 
-.modal-content {
+.img-responsive {
+  max-height: 100vh;
+  margin: -113px 0;
+  padding: 113px 0;
+}
+
+.modal-content .modal-dialog {
   background-color: #191919;
-  padding: 20px;
+  padding: 10px;
   border-radius: 12px;
   position: relative;
-  width: 90%;
+  max-height: 50%;
   max-width: 500px;
   text-align: center;
 }
 
 #modalImage {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
+  
+  max-height: 500px;
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -118,7 +126,7 @@ body {
   }
   
   .modal-content {
-    width: 95%;
+    height: 90%;
     max-width: 400px;
     padding: 15px;
   }
@@ -128,7 +136,19 @@ body {
   }
 }
 
-.modal-buttons {
+.modal-buttons1 {
+  position: absolute;
+  bottom: 30%; 
+  right: 1%; 
+  display: flex;
+  justify-content: center;  /* Space out the buttons */
+  gap: 10px;  /* Add space between buttons */
+  margin-top: 10px;
+}
+.modal-buttons2 {
+  position: absolute;
+  bottom: 25%; 
+  right: 1%; 
   display: flex;
   justify-content: center;  /* Space out the buttons */
   gap: 10px;  /* Add space between buttons */
