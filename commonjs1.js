@@ -10,7 +10,17 @@ function toggleMenu() {
 // Function to open the modal and load the image
 function openModal(imageSrc) {
   // Set the image source in the modal
-  document.getElementById('modalImage').src = imageSrc;
+  const modalImage = document.getElementById('modalImage');
+  modalImage.src = imageSrc;
+  
+  // Extract image name from src and set as title
+  const imageName = imageSrc.split('/').pop().split('.')[0];
+  document.getElementById('modalTitle').textContent = imageName;
+  
+  // Get alt text from the clicked image and set as description
+  const clickedImage = document.querySelector(`img[src="${imageSrc}"]`);
+  const altText = clickedImage ? clickedImage.alt : '';
+  document.getElementById('modalDescription').textContent = altText;
   
   // Show the modal with flex to center content
   document.getElementById('commonModal').style.display = 'flex';
@@ -30,10 +40,10 @@ function downloadImage() {
   link.click();
 }
 
-// Example of opening the modal (you can hook this up to your gallery items)
-document.querySelectorAll('.gallery-item').forEach(item => {
-  item.addEventListener('click', function () {
-    const imageSrc = this.querySelector('img').src;
-    openModal(imageSrc);
+// Update event listeners to handle both gallery item and image clicks
+document.querySelectorAll('.gallery-item img').forEach(img => {
+  img.addEventListener('click', function(e) {
+    e.stopPropagation(); // Prevent event bubbling
+    openModal(this.src);
   });
 });
