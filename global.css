@@ -128,10 +128,7 @@ footer {
     color: #A3B18A;
   }
   
-  .topnav a.active {
- 
-    color: #191919;
-  }
+
   
   .topnav a.icon {
     display: none;
@@ -175,6 +172,12 @@ footer {
   }
 
   
+    .form {
+      width:100%; 
+      align-items: center;
+      margin: 0 auto;
+    }
+
     .form-container {
       background-color: #282828;
       padding: 20px 30px;
@@ -183,7 +186,7 @@ footer {
       text-align: center;
       width: 100%;
       max-width: 400px; 
-      padding: 20px; 
+       
     }
 
     .form-wrapper {
@@ -216,9 +219,11 @@ footer {
     }
 
     .form-textarea {
-      height: 100px;
-      resize: none;
+      height: 150px;
+      width: 100%;
     }
+
+    
 
     .btn-submit {
       background-color: #A3B18A;

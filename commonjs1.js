@@ -13,8 +13,8 @@ function openModal(imageSrc) {
   const modalImage = document.getElementById('modalImage');
   modalImage.src = imageSrc;
   
-  // Extract image name from src and set as title
-  const imageName = imageSrc.split('/').pop().split('.')[0];
+  // Extract image name from src, replace hyphens with spaces, and set as title
+  const imageName = imageSrc.split('/').pop().split('.')[0].replace(/-/g, ' ');
   document.getElementById('modalTitle').textContent = imageName;
   
   // Get alt text from the clicked image and set as description
