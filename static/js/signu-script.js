@@ -1,26 +1,33 @@
-async function generateSignal() {
-    const equation = document.getElementById('equation').value;
-    if (!equation.trim()) {
-        alert("Please enter a valid equation.");
-        return;
-    }
-    try {
-        const response = await fetch('/plot', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ equation }),
+$(document).ready(function() {
+    $("#plotBtn").click(function() {
+        var equation = $("#equation").val();
+        var mode = $("#mode").val();
+        var xMin = parseFloat($("#xMin").val());
+        var xMax = parseFloat($("#xMax").val());
+        var yMin = parseFloat($("#yMin").val());
+        var yMax = parseFloat($("#yMax").val());
+
+        var data = {
+            equation: equation,
+            mode: mode,
+            xMin: xMin,
+            xMax: xMax,
+            yMin: yMin,
+            yMax: yMax
+        };
+
+        $.ajax({
+            url: "/plot",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(data),
+            success: function(response) {
+                // Update the image source with the returned plot
+                $("#plotImg").attr("src", "data:image/png;base64," + response.plot_image);
+            },
+            error: function(error) {
+                alert("Error generating plot: " + error.responseText);
+            }
         });
-        if (!response.ok) {
-            const errorData = await response.json();
-            alert(`Error: ${errorData.error}`);
-            return;
-        }
-        const blob = await response.blob();
-        const imageUrl = URL.createObjectURL(blob);
-        const img = document.getElementById('signal-plot');
-        img.src = imageUrl;
-    } catch (err) {
-        console.error(err);
-        alert("An error occurred while generating the signal.");
-    }
-}
+    });
+});
